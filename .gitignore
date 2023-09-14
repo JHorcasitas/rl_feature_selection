@@ -1,0 +1,16 @@
+# Python
+__pycache__
+.pytest_cache
+.ipynb_checkpoints
+*.ipynb
+
+# Dataset
+credicard.csv
+
+# Other
+todo.md
+logs
+
+# Datasets
+*.csv
+ieee_cis_fraud_detection
