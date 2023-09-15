@@ -9,13 +9,9 @@ def load_credit_card_fraud_detection_dataset(
     dataset_path: str,
 ) -> Tuple[np.ndarray, np.ndarray]:
     """
-    Load and preprocess the Kaggle credit card fraud detection dataset from the
-    given CSV path.
+    Load and preprocess the Kaggle credit card fraud detection dataset from the given CSV path.
 
-    This function reads the dataset from the provided path, applies a
-    logarithmic transformation to the "Amount" column, scales the relevant
-    columns using StandardScaler, and then splits the data into inputs (X) and
-    targets (Y).
+    This function reads the dataset from the provided path, applies a logarithmic transformation to the "Amount" column, scales the relevant columns using StandardScaler, and then splits the data into inputs (X) and targets (Y).
 
     :param dataset_path: Path to the CSV file containing the dataset.
     :return: A tuple containing two numpy arrays:
