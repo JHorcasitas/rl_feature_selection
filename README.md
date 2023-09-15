@@ -1,4 +1,4 @@
-# Reinforcement Learning Project
+# Feature Selection Using Reinforcement Learning
 
 ## Introduction
 
