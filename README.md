@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is an implementation of the paper ["Feature Selection Using Reinfocement Learning"](https://arxiv.org/pdf/2101.09460.pdf) and aims to tackle credit card fraud detection using Reinforcement Learning (RL). The RL agent learns optimal feature selection strategies to classify fraudulent transactions effectively.
+This project is an implementation of the paper ["Feature Selection Using Reinfocement Learning"](https://arxiv.org/pdf/2101.09460.pdf) and aims to tackle credit card fraud detection using Reinforcement Learning (RL). The RL agent learns optimal feature selection strategies to classify fraudulent transactions effectively. For a comprehensive explanation of the model, please refer to [this](https://arturohorcasitas.com/articles/rl_feature_selection) post.
 
 ## Getting Started
 
