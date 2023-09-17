@@ -81,15 +81,16 @@ class FeatureSelector:
             if all(current_state):
                 break
 
-    def _update_state_value(self, current_state_index: int, next_state_index: int, reward: float) -> None:
+    def _update_state_value(self, current_state_index: int, next_state_index: int, reward: float, gamma: float = 0.9) -> None:
         """
         Update the state-value using Temporal Difference (TD) learning.
         
         :param current_state_index: The current state index.
         :param next_state_index: The new state index after taking an action.
         :param reward: The immediate reward received after transitioning from the current to the next state.
+        :param gamma: Parameter used in the TD algorithm, by default 0.9.
         """
-        td_error = reward + self._state_value[next_state_index] - self._state_value[current_state_index]
+        td_error = reward + gamma * self._state_value[next_state_index] - self._state_value[current_state_index]
         self._state_value[current_state_index] += self._alpha * td_error
 
     def _initialize_AOR(self) -> np.ndarray:
